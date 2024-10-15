@@ -13,6 +13,8 @@ import { MdOutlineVideoLibrary } from "react-icons/md";
 import { FaWandMagicSparkles } from "react-icons/fa6";
 import { IoSettingsOutline } from "react-icons/io5";
 import { CiCircleInfo } from "react-icons/ci";
+import { MdOutlineCardMembership } from "react-icons/md";
+import { FaStaylinked } from "react-icons/fa6";
 
 // framer motion
 import { motion, useAnimationControls } from "framer-motion";
@@ -81,7 +83,7 @@ const Sidebar = () => {
       initial="close"
       animate={containerControls}
       variants={containerVariants}
-      className=" overflow-clip fixed dark:bg-dark-200 h-screen z-50"
+      className="left-[-100px] md:left-0 overflow-clip fixed bg-light-200 dark:bg-dark-200 h-screen z-50"
     >
       <div className="py-4 px-2 flex flex-col h-full">
         {/* header */}
@@ -102,7 +104,7 @@ const Sidebar = () => {
 
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="bg-[#292929] p-2 rounded-md"
+            className="bg-light-50 dark:bg-dark-50 p-2 rounded-md"
           >
             <FaArrowRight className="text-xl h-4 w-4 " />
           </button>
@@ -121,10 +123,12 @@ const Sidebar = () => {
             />
             <SideLink to="/content" icon={<MdOutlineVideoLibrary />} text="Content" />
             <SideLink to="/" icon={<SiGoogleanalytics />} text="Analytics" />
-            <SideLink to="/" icon={<MdOutlineCloudUpload />} text="Upload" />
+            <SideLink to="/upload" icon={<MdOutlineCloudUpload />} text="Upload" />
+            <SideLink to="/memberships" icon={<MdOutlineCardMembership/>} text="Memberships" />
+            <SideLink to="/linkings" icon={< FaStaylinked/>} text="Linking" />
             <SideLink to="/" icon={<TbMoneybag />} text="Earn" />
             <SideLink
-              to="/"
+              to="/customization"
               icon={<FaWandMagicSparkles />}
               text="Customization"
             />

@@ -9,7 +9,7 @@ const Main = () => {
     <div className="flex w-full relative">
        <Sidebar/>
 
-       <div className="ml-16 w-full mx-1">
+       <div className="md:ml-16 w-full mx-1">
               <Topbar/>
           <div className="mt-20">
              <Outlet/>

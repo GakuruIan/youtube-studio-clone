@@ -13,8 +13,11 @@ export default {
            200:"#212121",
         },
         light:{
-          20:"#dfe5e8",
-          50:"#EFEFF5"
+          50:"#F4F6FF",
+          // 100:"#FBFEFF",
+          // 100:"#F4F6FF",
+          100:"#F4F9F9",
+          200:"#FBFEFF"
         }
       },
       fontFamily:{

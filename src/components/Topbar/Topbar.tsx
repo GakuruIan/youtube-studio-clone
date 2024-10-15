@@ -9,12 +9,12 @@ import pic from '../../assets/image.jpg'
 
 const Topbar = () => {
   return (
-    <div className="w-[calc(100vw-60px)] px-2 h-16 py-4 flex items-center justify-between fixed top-0  dark:bg-dark-200">
+    <div className="w-full md:w-[calc(100vw-60px)] px-2 h-16 py-4 flex items-center gap-x-2 justify-between fixed top-0 bg-light-200 dark:bg-dark-200">
       <div className="">
         <CiMenuFries className="text-xl" />
       </div>
       <form
-        className="flex items-center dark:bg-dark-50 w-full max-w-xl rounded-md px-4"
+        className="flex items-center bg-light-50 dark:bg-dark-50 w-full max-w-xl rounded-md px-4"
       >
         <input
           type="text"

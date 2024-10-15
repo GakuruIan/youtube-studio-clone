@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom'
 
 const SideLink:React.FC<props> = ({icon,to,text}) => {
   return (
-    <Link to={to} className="inline-flex items-center gap-x-6 hover:bg-dark-50 py-2 px-2 rounded-md">
+    <Link to={to} className="inline-flex items-center gap-x-6 hover:bg-light-50 hover:dark:bg-dark-50 py-2 px-2 rounded-md">
       
         {React.cloneElement(icon, { className: 'text-xl min-w-5 min-h-5' })}
         <p className="text-base">{text}</p>
